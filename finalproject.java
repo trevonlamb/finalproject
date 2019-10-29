@@ -37,7 +37,7 @@ public class finalproject {
         
         
         
-        while(
+        while(!answer.equals("quit")) {
         
         // Prompt user to put in there weight in pounds
         System.out.print("Input your body weight in pounds: ");
@@ -78,6 +78,10 @@ public class finalproject {
             double finalWeight7 =  convNept(userWeight, earthGrav, neptGrav);
             System.out.printf("You weight on this planet would: %.2f%n", finalWeight7);
         }
+            
+        //Prompt user to do another calculation, if quit is entered then the program ends. Otherwise the loop will continue
+        System.out.println("Would you like to do another calculation? If not enter quit:");
+            String answer = input.newLine().trim();
     }
 
     // 
