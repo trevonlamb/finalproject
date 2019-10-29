@@ -7,14 +7,7 @@ public class finalproject {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        // Prompt user to put in there weight in pounds
-        System.out.print("Input your body weight in pounds: ");
-        double userWeight = input.nextDouble();
-        input.nextLine();
 
-        //Prompt user to what planet they want to compare their weight
-        System.out.print("Input the planet that you want to compare your weight with: ");
-        String userPlanet = input.nextLine();
         
         
         // Declare constant of Earth's Gravity
@@ -40,7 +33,23 @@ public class finalproject {
 
         // Declare constant of Neptune's Gravity
         final double neptGrav =  11.15; // in m/s^2
+        
+        
+        
+        
+        while(
+        
+        // Prompt user to put in there weight in pounds
+        System.out.print("Input your body weight in pounds: ");
+        double userWeight = input.nextDouble();
+        input.nextLine();
 
+        //Prompt user to what planet they want to compare their weight
+        System.out.print("Input the planet that you want to compare your weight with: ");
+        String userPlanet = input.nextLine();
+        
+        
+        
         if(userPlanet.equals("Mercury")){
             double finalWeight1 =  convMerc(userWeight, earthGrav, mercGrav);
             System.out.printf("You weight on this planet would: %.2f%n", finalWeight1);
