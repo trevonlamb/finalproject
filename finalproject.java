@@ -33,9 +33,8 @@ public class finalproject {
 
         // Declare constant of Neptune's Gravity
         final double neptGrav =  11.15; // in m/s^2
-        
-        
-        
+       
+        String answer = "";
         
         while(!answer.equals("quit")) {
         
@@ -82,6 +81,7 @@ public class finalproject {
         //Prompt user to do another calculation, if quit is entered then the program ends. Otherwise the loop will continue
         System.out.println("Would you like to do another calculation? If not enter quit:");
             String answer = input.newLine().trim();
+            answer += answer;
     }
 
     // 
