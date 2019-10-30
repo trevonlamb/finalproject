@@ -111,4 +111,4 @@ public class finalproject {
             double neptWeight = (userWeight/earthGrav) * neptGrav;
             return neptWeight;
         }
-    }
+}
